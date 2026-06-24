@@ -20,6 +20,15 @@ export const metadata: Metadata = {
     images: ["/images/og-image.png"],
     type: "website",
   },
+  icons: {
+    icon: "../favicon.ico",
+    shortcut: "../favicon.ico",
+    apple: "../favicon.ico",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "../favicon.ico",
+    },
+  },
 };
 
 export default function RootLayout({

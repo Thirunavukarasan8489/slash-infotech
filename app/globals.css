@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-slash: "slash";
+  --font-sans: "Inter", "Inter Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    "Space Grotesk", "Space Grotesk Fallback", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.22);
+}
+
+.section-pad {
+  padding: 6rem 1rem;
+}
+
+@font-face {
+  font-family: slash;
+  src: url("../public/fonts/Ethnocentric-Regular.otf") format("otf");
+}
+
+.slash-font {
+  font-family: slash;
+}

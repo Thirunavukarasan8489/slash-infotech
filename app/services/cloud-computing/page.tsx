@@ -1,0 +1,10 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { services } from "@/lib/constants";
+import { PageHero } from "@/components/ui/PageHero";
+import { Button } from "@/components/ui/Button";
+
+const service = services.find((item) => item.slug === "cloud-computing")!;
+export const metadata: Metadata = { title: service.title, description: service.description, openGraph: { title: `${service.title} | Slash Infotech`, description: service.description, images: ["/images/og-image.png"], url: `https://slashinfotech.co.uk/services/${service.slug}` } };
+export default function ServiceDetailPage() { const Icon = service.icon; return <><PageHero eyebrow="Service" title={service.title} text={service.description} /><section className="bg-white px-4 py-24"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr]"><div className="rounded-lg bg-[#1E2A3A] p-8 text-white"><Icon size={42} className="text-[#60A5FA]" /><h2 className="mt-5 text-2xl font-black">What we deliver</h2><p className="mt-4 leading-8 text-white/70">A focused engagement shaped around your commercial goals, technical constraints, and customer experience.</p><Button href="/contact" className="mt-8 gap-2">Plan this service <ArrowRight size={18} /></Button></div><div className="grid gap-4 sm:grid-cols-2">{service.features.map((feature) => <div key={feature} className="rounded-lg border border-slate-200 bg-[#F3F4F6] p-6"><CheckCircle2 className="text-[#2563EB]" /><h3 className="mt-4 font-bold text-[#1E2A3A]">{feature}</h3><p className="mt-2 text-sm leading-7 text-slate-600">Delivered with clear milestones, documentation, and quality checks.</p></div>)}</div></div></section><section className="bg-[#F3F4F6] px-4 py-16 text-center"><h2 className="text-2xl font-black text-[#1E2A3A]">Need a complete product squad?</h2><Link href="/services" className="mt-4 inline-flex items-center gap-2 font-bold text-[#2563EB]">Explore all services <ArrowRight size={18} /></Link></section></>; }

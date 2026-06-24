@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+import { BriefcaseBusiness, MapPin, Sparkles } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
+import { Button } from "@/components/ui/Button";
+
+export const metadata: Metadata = { title: "Careers", description: "Join Slash Infotech and help build premium software, AI, and cloud products.", openGraph: { title: "Careers | Slash Infotech", description: "Career opportunities at Slash Infotech.", images: ["/images/og-image.png"], url: "https://slashinfotech.co.uk/careers" } };
+export default function CareersPage() { const jobs = ["Full Stack Engineer", "Product Designer", "Cloud DevOps Consultant"]; return <><PageHero eyebrow="Careers" title="Build meaningful digital products" text="Join a calm, ambitious team working across modern software, AI, cloud, and secure product delivery." /><section className="bg-[#F3F4F6] px-4 py-24"><div className="mx-auto grid max-w-7xl gap-5 lg:grid-cols-3">{jobs.map((job) => <div key={job} className="rounded-lg bg-white p-6 shadow-sm"><BriefcaseBusiness className="text-[#2563EB]" /><h2 className="mt-5 text-xl font-black text-[#1E2A3A]">{job}</h2><p className="mt-3 flex items-center gap-2 text-sm text-slate-600"><MapPin size={16} /> Hybrid / UK remote</p><p className="mt-3 flex items-center gap-2 text-sm text-slate-600"><Sparkles size={16} /> Product-focused client work</p><Button href="/contact" className="mt-6">Apply Now</Button></div>)}</div></section></>; }

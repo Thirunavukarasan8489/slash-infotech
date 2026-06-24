@@ -24,7 +24,7 @@ function Logo() {
         priority
         className="h-10 w-auto"
       />
-      <p className="text-xl slash-font text-slate-800">SLASH INFOTECH</p>
+      <p className="text-lg font-slash text-slate-800">SLASH INFOTECH</p>
     </Link>
   );
 }

@@ -284,7 +284,7 @@ export const teamMembers = [
     role: "Director",
     focus: "Full-stack systems, API design, delivery standards",
     bio: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    image: "/images/team/team-b-1.png",
+    image: "/images/team/Kasthuriraja.png",
     accent: "from-[#3228C8] to-[#17157A]",
   },
   {

@@ -1,5 +1,6 @@
 import { CTABanner } from "@/components/home/CTABanner";
 import { HeroSection } from "@/components/home/HeroSection";
+import { HomeTeamSection } from "@/components/home/HomeTeamSection";
 import { LatestProjects } from "@/components/home/LatestProjects";
 import { ServicesSnapshot } from "@/components/home/ServicesSnapshot";
 import { StatsCounter } from "@/components/home/StatsCounter";
@@ -16,6 +17,7 @@ export function HomePage() {
       <StatsCounter />
       <TechStack />
       <Testimonials />
+      <HomeTeamSection />
       <LatestProjects />
       <CTABanner />
     </>

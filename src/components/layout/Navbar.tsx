@@ -13,7 +13,7 @@ function Logo() {
   return (
     <Link
       href="/"
-      className="flex items-center gap-3"
+      className="flex items-center"
       aria-label="Slash Infotech home"
     >
       <Image
@@ -24,7 +24,7 @@ function Logo() {
         priority
         className="h-10 w-auto"
       />
-      <p className="text-lg font-slash text-slate-800">SLASH INFOTECH</p>
+      {/* <p className="text-lg font-slash text-slate-800">SLASH INFOTECH</p> */}
     </Link>
   );
 }
@@ -34,6 +34,18 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    // Clean up in case the component unmounts while menu is open
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [open]);
 
   useEffect(() => {
     let last = window.scrollY;
@@ -57,8 +69,8 @@ export function Navbar() {
         className={cn(
           "mx-auto flex max-w-7xl items-center justify-between rounded-lg border px-4 py-3 transition",
           scrolled
-            ? "border-white/60 bg-white/85 shadow-lg shadow-slate-900/5 backdrop-blur-xl"
-            : "border-transparent bg-white/70 backdrop-blur-md",
+            ? "border-white/60 bg-white/70 shadow-lg shadow-slate-900/5 backdrop-blur-xl"
+            : "border-transparent bg-white/85 backdrop-blur-md",
         )}
       >
         <Logo />

@@ -13,3 +13,4 @@ export function AnimatedCard({ children, className }: { children: React.ReactNod
     </motion.div>
   );
 }
+

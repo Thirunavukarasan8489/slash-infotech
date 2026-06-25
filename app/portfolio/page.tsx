@@ -10,15 +10,15 @@ export const metadata: Metadata = {
     title: "Portfolio | Slash Infotech",
     description: "Recent digital builds by Slash Infotech.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/portfolio",
+    url: "https://slash-infotech.vercel.app/portfolio",
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -34,3 +34,4 @@ export default function PortfolioPage() {
     </>
   );
 }
+

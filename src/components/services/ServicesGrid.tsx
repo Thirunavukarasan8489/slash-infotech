@@ -10,3 +10,4 @@ export function ServicesGrid() {
 export function ServiceCard({ slug, title, summary, icon: Icon }: { slug: string; title: string; summary: string; icon: React.ElementType }) {
   return <AnimatedCard className="border-slate-200 bg-white"><div className="grid h-12 w-12 place-items-center rounded-md bg-[#2563EB]/10 text-[#2563EB]"><Icon size={24} /></div><h2 className="mt-5 text-xl font-black text-[#1E2A3A]">{title}</h2><p className="mt-3 text-sm leading-7 text-slate-600">{summary}</p><Link href={`/services/${slug}`} className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#2563EB]">Explore <ArrowRight size={16} /></Link></AnimatedCard>;
 }
+

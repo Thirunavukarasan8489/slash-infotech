@@ -12,3 +12,4 @@ export function PageHero({ eyebrow, title, text }: { eyebrow: string; title: str
     </section>
   );
 }
+

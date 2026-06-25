@@ -10,3 +10,4 @@ export function SectionHeading({ eyebrow, title, text, light = false }: { eyebro
     </div>
   );
 }
+

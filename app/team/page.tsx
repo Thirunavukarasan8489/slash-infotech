@@ -14,15 +14,15 @@ export const metadata: Metadata = {
     title: "Team | Slash Infotech",
     description: "Meet the senior specialists behind Slash Infotech delivery.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/team",
+    url: "https://slash-infotech.vercel.app/team",
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -72,7 +72,7 @@ export default function TeamPage() {
         </div>
       </section>
       <section className="bg-white px-4 py-20">
-        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 rounded-lg bg-gradient-to-br from-[#2563EB] to-[#1E2A3A] p-8 text-white shadow-[0_24px_80px_rgba(37,99,235,0.25)] md:flex-row md:items-center md:p-12">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 rounded-lg bg-linear-to-br from-[#2563EB] to-[#1E2A3A] p-8 text-white shadow-[0_24px_80px_rgba(37,99,235,0.25)] md:flex-row md:items-center md:p-12">
           <div>
             <p className="font-mono text-sm font-bold uppercase tracking-[0.25em] text-white/65">
               Work with us
@@ -89,3 +89,4 @@ export default function TeamPage() {
     </>
   );
 }
+

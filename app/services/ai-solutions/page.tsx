@@ -13,15 +13,15 @@ export const metadata: Metadata = {
     title: `${service.title} | Slash Infotech`,
     description: service.description,
     images: ["/images/og-image.png"],
-    url: `https://slashinfotech.co.uk/services/${service.slug}`,
+    url: `https://slash-infotech.vercel.app/services/${service.slug}`,
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -78,3 +78,4 @@ export default function ServiceDetailPage() {
     </>
   );
 }
+

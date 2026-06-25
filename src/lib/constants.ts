@@ -21,7 +21,7 @@ import type { BlogPost, Project, Service } from "@/types";
 
 export const siteConfig = {
   name: "Slash Infotech",
-  url: "https://slashinfotech.co.uk",
+  url: "https://slash-infotech.vercel.app",
   email: "contact@slashinfotech.co.uk",
   phone: "+44 20 4571 8420",
   address: "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ",
@@ -338,3 +338,4 @@ export const teamPrinciples = [
     icon: Sparkles,
   },
 ];
+

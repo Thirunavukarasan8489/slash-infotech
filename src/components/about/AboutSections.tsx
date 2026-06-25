@@ -17,3 +17,4 @@ export function TeamGrid() {
 export function Values() {
   return <section className="bg-[#1E2A3A] px-4 py-24 text-white"><div className="mx-auto max-w-7xl"><SectionHeading eyebrow="Values" title="How we work" light /><div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">{values.map((value) => { const Icon = value.icon; return <div key={value.title} className="rounded-lg border border-white/10 bg-white/[0.04] p-6"><Icon className="text-[#60A5FA]" /><h3 className="mt-5 font-bold">{value.title}</h3><p className="mt-3 text-sm leading-7 text-white/65">{value.text}</p></div>; })}</div></div></section>;
 }
+

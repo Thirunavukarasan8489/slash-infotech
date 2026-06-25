@@ -10,15 +10,15 @@ export const metadata: Metadata = {
     description:
       "Terms for using the Slash Infotech website and engaging our digital services.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/terms",
+    url: "https://slash-infotech.vercel.app/terms",
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -61,3 +61,4 @@ export default function LegalPage() {
     </>
   );
 }
+

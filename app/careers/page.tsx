@@ -11,15 +11,15 @@ export const metadata: Metadata = {
     title: "Careers | Slash Infotech",
     description: "Career opportunities at Slash Infotech.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/careers",
+    url: "https://slash-infotech.vercel.app/careers",
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -58,3 +58,4 @@ export default function CareersPage() {
     </>
   );
 }
+

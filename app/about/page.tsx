@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "About | Slash Infotech",
     description: "A UK technology partner for ambitious digital teams.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/about",
+    url: "https://slash-infotech.vercel.app/about",
   },
     icons: {
     icon: "/favicon.ico",
@@ -42,3 +42,4 @@ export default function AboutPage() {
     </>
   );
 }
+

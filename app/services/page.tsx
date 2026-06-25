@@ -10,15 +10,15 @@ export const metadata: Metadata = {
     title: "Services | Slash Infotech",
     description: "Digital solutions with engineering depth.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/services",
+    url: "https://slash-infotech.vercel.app/services",
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -34,3 +34,4 @@ export default function ServicesPage() {
     </>
   );
 }
+

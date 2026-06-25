@@ -1,24 +1,28 @@
 import type { Metadata } from "next";
 import { HomePage } from "@/components/home/HomePage";
+import { ogImage, siteUrl } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "UK Software, AI & Cloud Studio",
   description:
     "Premium software development, AI solutions, cloud computing, mobile apps, UI/UX, and cyber security from Slash Infotech.",
+  alternates: {
+    canonical: siteUrl,
+  },
   openGraph: {
     title: "Slash Infotech | UK Software, AI & Cloud Studio",
     description: "Premium software, AI, cloud, and digital solutions.",
-    images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk",
+    images: [ogImage],
+    url: siteUrl,
+    siteName: "Slash Infotech",
+    type: "website",
+    locale: "en_GB",
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-    other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/favicon.ico",
-    },
+  twitter: {
+    card: "summary_large_image",
+    title: "Slash Infotech | UK Software, AI & Cloud Studio",
+    description: "Premium software, AI, cloud, and digital solutions.",
+    images: [`${siteUrl}/images/og-image.png`],
   },
 };
 
@@ -27,7 +31,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Slash Infotech",
-    url: "https://slashinfotech.co.uk",
+    url: siteUrl,
     email: "hello@slashinfotech.co.uk",
     address: {
       "@type": "PostalAddress",

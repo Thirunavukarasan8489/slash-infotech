@@ -23,3 +23,4 @@ export type BlogPost = {
   date: string;
   readTime: string;
 };
+

@@ -10,3 +10,4 @@ export function ScrollReveal({ children, className }: { children: React.ReactNod
     </motion.div>
   );
 }
+

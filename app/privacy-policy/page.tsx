@@ -10,15 +10,15 @@ export const metadata: Metadata = {
     description:
       "GDPR-aware privacy information for Slash Infotech website visitors and clients.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/privacy-policy",
+    url: "https://slash-infotech.vercel.app/privacy-policy",
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -61,3 +61,4 @@ export default function LegalPage() {
     </>
   );
 }
+

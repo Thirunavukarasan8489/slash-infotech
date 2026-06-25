@@ -10,15 +10,15 @@ export const metadata: Metadata = {
     description:
       "Cookie information for the Slash Infotech website, including essential and analytics cookies.",
     images: ["/images/og-image.png"],
-    url: "https://slashinfotech.co.uk/cookies",
+    url: "https://slash-infotech.vercel.app/cookies",
   },
   icons: {
-    icon: "../favicon.ico",
-    shortcut: "../favicon.ico",
-    apple: "../favicon.ico",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "../favicon.ico",
+      url: "/favicon.ico",
     },
   },
 };
@@ -61,3 +61,4 @@ export default function LegalPage() {
     </>
   );
 }
+

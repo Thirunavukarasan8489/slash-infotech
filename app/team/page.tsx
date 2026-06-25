@@ -35,7 +35,7 @@ export default function TeamPage() {
         title="The people behind the build"
         text="A compact senior team connecting product strategy, design, engineering, AI, cloud, and security into one calm delivery rhythm."
       />
-      <section className="relative overflow-hidden bg-[#111827] px-4 py-24 text-white">
+      <section className="relative overflow-hidden bg-[#020416] px-4 py-24 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_15%,rgba(37,99,235,0.22),transparent_30%),radial-gradient(circle_at_90%_70%,rgba(255,255,255,0.1),transparent_25%)]" />
         <div className="relative mx-auto max-w-7xl">
           <TeamRoster />

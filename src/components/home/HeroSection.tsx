@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden bg-[#111827] px-4 pt-28 text-white">
+    <section className="relative flex min-h-screen items-center overflow-hidden bg-[#020416] px-4 pt-28 text-white">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(37,99,235,0.24),transparent_32%),radial-gradient(circle_at_80%_10%,rgba(255,255,255,0.12),transparent_26%)]" />
       {[...Array(18)].map((_, index) => (
         <motion.span
@@ -98,6 +98,7 @@ export function HeroSection() {
             <Image
               src="/images/slash-header.png"
               alt="Slash Infotech"
+              loading="eager"
               width={300}
               height={300}
             />
@@ -108,4 +109,3 @@ export function HeroSection() {
     </section>
   );
 }
-

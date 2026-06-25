@@ -23,8 +23,13 @@ export const siteConfig = {
   name: "Slash Infotech",
   url: "https://slash-infotech.vercel.app",
   email: "contact@slashinfotech.co.uk",
-  phone: "+44 20 4571 8420",
-  address: "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ",
+  phone: "+44 7878 949007",
+  phones: [
+    { label: "UK", value: "+44 7878 949007" },
+    { label: "India", value: "+91 98420 98741" },
+    { label: "India", value: "+91 84899 02902" },
+  ],
+  address: "0/2,31 Buccleuch Street, Glasgow, G36PL",
   tagline: "Software, AI, cloud, and digital products built with precision.",
 };
 
@@ -338,4 +343,5 @@ export const teamPrinciples = [
     icon: Sparkles,
   },
 ];
+
 

@@ -11,6 +11,15 @@ export const metadata: Metadata = {
     images: ["/images/og-image.png"],
     url: "https://slashinfotech.co.uk",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/favicon.ico",
+    },
+  },
 };
 
 export default function Home() {

@@ -29,7 +29,7 @@ export const siteConfig = {
     { label: "India", value: "+91 98420 98741" },
     { label: "India", value: "+91 84899 02902" },
   ],
-  address: "0/2,31 Buccleuch Street, Glasgow, G36PL",
+  address: "0/2,31 Buccleuch Street, Glasgow, G36PL, UK",
   tagline: "Software, AI, cloud, and digital products built with precision.",
 };
 
@@ -277,15 +277,15 @@ export const values = [
 
 export const teamMembers = [
   {
-    name: "David Martin",
-    role: "CEO (Chief Executive Officer)",
+    name: "Dr. David Martin",
+    role: "Founder & CEO (Chief Executive Officer)",
     focus: "Product strategy, SaaS platforms, technical discovery",
     bio: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     image: "/images/team/DavidMartin.png",
     accent: "from-[#2526A9] to-[#11155F]",
   },
   {
-    name: "Kasthuriraja",
+    name: "Mr. Kasthuri Raja",
     role: "Director",
     focus: "Full-stack systems, API design, delivery standards",
     bio: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -293,7 +293,7 @@ export const teamMembers = [
     accent: "from-[#3228C8] to-[#17157A]",
   },
   {
-    name: "Mathankumar",
+    name: "Mr. Mathankumar",
     role: "Managing Director",
     focus: "AI assistants, RAG workflows, intelligent operations",
     bio: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -301,7 +301,7 @@ export const teamMembers = [
     accent: "from-[#2435C5] to-[#111B6B]",
   },
   {
-    name: "Thirunavukarasan",
+    name: "Mr. Thirunavukarasan",
     role: "Executive Director",
     focus: "UX research, interface systems, conversion journeys",
     bio: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
@@ -343,5 +343,3 @@ export const teamPrinciples = [
     icon: Sparkles,
   },
 ];
-
-

@@ -350,3 +350,45 @@ Verification completed:
 Notes:
 - The existing root `app/` directory could not be removed by the sandbox, so live routes remain in `app/` while reusable implementation code lives in `src/`.
 - `next/font` Google font fetching was unavailable during offline/sandboxed build, so the site uses CSS font stacks matching Inter and Space Grotesk.
+
+---
+
+## Work Completed - 2026-07-01
+
+Updated the Contact form with custom validation rules.
+
+Completed items:
+- Made `Name` mandatory and restricted it to letters and spaces only.
+- Added a phone number field with a country-code dropdown for UK `+44` and India `+91`.
+- Added country-based phone digit validation. UK and India currently require exactly 10 digits.
+- Restricted the phone input to digits only and trims input to the selected country digit count.
+- Made `Email` mandatory and validated it with an email-only pattern.
+- Made `Project brief` mandatory and restricted it to letters, numbers, and spaces only.
+- Kept validation client-side with React Hook Form and preserved the existing contact form styling.
+
+Verification completed:
+- `npm run lint` passed.
+- `npm run build` passed.
+
+---
+
+## Work Completed - 2026-07-01 MongoDB Contact Storage
+
+Connected the Contact form to MongoDB using the `MONGO_URL` environment variable.
+
+Completed items:
+- Installed the official `mongodb` package.
+- Added `src/lib/mongodb.ts` with a lazy MongoDB connection helper so the client is created only when the API route is called.
+- Added `app/api/contact/route.ts` as a Node.js runtime POST endpoint for contact submissions.
+- Added server-side validation for name, country code, phone number, email, and project brief before database insertion.
+- Saved successful submissions into the `contact_submissions` MongoDB collection with name, country code, phone number, full phone number, email, message, source, and created date.
+- Updated `src/components/contact/ContactForm.tsx` to POST validated form data to `/api/contact`.
+- Added submit loading, success, and error states to the Contact form.
+
+Verification completed:
+- `npm run lint` passed.
+- `npm run build` passed.
+
+Notes:
+- Did not insert a test contact row into MongoDB to avoid adding dummy data to the live database.
+- Optional `MONGO_DB_NAME` can be set in `.env` to force a specific database name; otherwise the database from the MongoDB connection string is used.

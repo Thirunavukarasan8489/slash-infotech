@@ -28,8 +28,8 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Slash Infotech",
-    address: "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ",
-    email: "hello@slashinfotech.co.uk",
+    address: "0/2,31 Buccleuch Street, Glasgow, G36PL, UK",
+    email: "contact@slashinfotech.co.uk",
   };
   return (
     <>
@@ -51,4 +51,3 @@ export default function ContactPage() {
     </>
   );
 }
-

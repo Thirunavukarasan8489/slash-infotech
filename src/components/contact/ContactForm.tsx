@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Send } from "lucide-react";
 import { useState } from "react";
@@ -86,7 +86,10 @@ export function ContactForm() {
                 message: "Name can contain letters and spaces only",
               },
               onChange: (event) => {
-                event.target.value = event.target.value.replace(/[^A-Za-z ]/g, "");
+                event.target.value = event.target.value.replace(
+                  /[^A-Za-z ]/g,
+                  "",
+                );
               },
             })}
           />
@@ -179,10 +182,14 @@ export function ContactForm() {
               required: "Tell us a little about the project",
               pattern: {
                 value: briefPattern,
-                message: "Project brief can contain letters, numbers, and spaces only",
+                message:
+                  "Project brief can contain letters, numbers, and spaces only",
               },
               onChange: (event) => {
-                event.target.value = event.target.value.replace(/[^A-Za-z0-9 ]/g, "");
+                event.target.value = event.target.value.replace(
+                  /[^A-Za-z0-9 ]/g,
+                  "",
+                );
               },
             })}
           />

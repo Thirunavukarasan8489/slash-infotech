@@ -249,7 +249,7 @@ export const posts: BlogPost[] = [
 export const contactCards = [
   { label: "Email", value: siteConfig.email, icon: Mail },
   { label: "Phone", value: siteConfig.phone, icon: Phone },
-  { label: "London Office", value: siteConfig.address, icon: Globe2 },
+  { label: "UK Office", value: siteConfig.address, icon: Globe2 },
 ];
 
 export const values = [
@@ -279,7 +279,7 @@ export const teamMembers = [
   {
     name: "Dr. David Martin",
     role: "Founder & CEO (Chief Executive Officer)",
-    email: "david@slashinfotech.co.uk",
+    email: "ceo@slashinfotech.co.uk",
     focus: "Product strategy, SaaS platforms, technical discovery",
     bio: "David shapes the company vision, product strategy, and client discovery process so every build starts with a clear commercial outcome.",
     image: "/images/team/DavidMartin.png",
@@ -288,7 +288,7 @@ export const teamMembers = [
   {
     name: "Mr. Kasthuri Raja",
     role: "Director",
-    email: "kasthuri@slashinfotech.co.uk",
+    email: "director@slashinfotech.co.uk",
     focus: "Interface systems, conversion journeys",
     bio: "Kasthuri guides client relationships, delivery coordination, and user-focused product decisions from concept to launch.",
     image: "/images/team/Kasthuriraja.png",
@@ -297,7 +297,7 @@ export const teamMembers = [
   {
     name: "Mr. Mathankumar",
     role: "Managing Director",
-    email: "mathankumar@slashinfotech.co.uk",
+    email: "managingdirector@slashinfotech.co.uk",
     focus: "AI assistants, RAG workflows, intelligent operations",
     bio: "Mathankumar connects business operations with practical AI solutions, automation workflows, and scalable digital product planning.",
     image: "/images/team/Mathankumar.png",
@@ -306,7 +306,7 @@ export const teamMembers = [
   {
     name: "Mr. Thirunavukarasan",
     role: "Executive Director",
-    email: "thirunavukarasan@slashinfotech.co.uk",
+    email: "executivedirector@slashinfotech.co.uk",
     focus: "Full-stack systems, API design, delivery standards, UX research",
     bio: "Thirunavukarasan leads engineering delivery, full-stack architecture, and quality standards across web platforms, APIs, and internal systems.",
     image: "/images/team/Thirunavukarasan.png",
@@ -347,4 +347,3 @@ export const teamPrinciples = [
     icon: Sparkles,
   },
 ];
-

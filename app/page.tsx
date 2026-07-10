@@ -32,7 +32,7 @@ export default function Home() {
     "@type": "Organization",
     name: "Slash Infotech",
     url: siteUrl,
-    email: "hello@slashinfotech.co.uk",
+    email: "contact@slashinfotech.co.uk",
     address: {
       "@type": "PostalAddress",
       addressLocality: "London",

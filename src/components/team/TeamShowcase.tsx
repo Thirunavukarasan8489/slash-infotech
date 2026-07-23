@@ -65,7 +65,12 @@ function TeamCard({ member, index }: { member: TeamMember; index: number }) {
         </div>
       </div>
 
-      <div className={cn("relative flex flex-1 flex-col bg-gradient-to-br p-5 sm:p-6", member.accent)}>
+      <div
+        className={cn(
+          "relative flex flex-1 flex-col bg-gradient-to-br p-5 sm:p-6",
+          member.accent,
+        )}
+      >
         <div className="absolute inset-0 opacity-20 [background-image:linear-gradient(rgba(255,255,255,.22)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.22)_1px,transparent_1px)] [background-size:42px_42px]" />
         <div className="relative flex flex-1 flex-col">
           <h3 className="text-2xl font-semibold tracking-[-0.035em] text-white sm:text-[26px]">
@@ -81,7 +86,7 @@ function TeamCard({ member, index }: { member: TeamMember; index: number }) {
             <span className="break-all">{member.email}</span>
           </a>
 
-          <div className="mt-5 grid gap-4">
+          <div className="mt-5 grid gap-4 pb-5 sm:mt-6 sm:gap-5">
             <DetailRow label="Focus">
               <span className="inline-flex gap-2">
                 <Target className="mt-1 shrink-0 text-white/70" size={16} />
@@ -89,6 +94,15 @@ function TeamCard({ member, index }: { member: TeamMember; index: number }) {
               </span>
             </DetailRow>
             <DetailRow label="Bio">{member.bio}</DetailRow>
+          </div>
+
+          <div className="flex justify-center">
+            <Link
+              href=""
+              className="inline-flex min-h-12 items-center gap-2 rounded-md border border-white/10 bg-white/10 px-5 text-sm font-bold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:text-[#111827]"
+            >
+              View Profile <ArrowRight size={17} />
+            </Link>
           </div>
         </div>
       </div>
@@ -163,5 +177,3 @@ export function TeamPreview() {
 export function TeamRoster() {
   return <TeamRail members={teamMembers} roster />;
 }
-
-

@@ -98,7 +98,7 @@ function TeamCard({ member, index }: { member: TeamMember; index: number }) {
 
           <div className="flex justify-center">
             <Link
-              href=""
+              href={`/team/${member.slug}`}
               className="inline-flex min-h-12 items-center gap-2 rounded-md border border-white/10 bg-white/10 px-5 text-sm font-bold text-white backdrop-blur transition hover:-translate-y-0.5 hover:bg-white hover:text-[#111827]"
             >
               View Profile <ArrowRight size={17} />

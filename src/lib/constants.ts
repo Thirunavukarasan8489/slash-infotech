@@ -277,57 +277,211 @@ export const values = [
 
 export const teamMembers = [
   {
+    slug: "dr-david-martin",
     name: "Dr. David Martin",
     role: "Founder & CEO (Chief Executive Officer)",
     email: "ceo@slashinfotech.co.uk",
     focus: "Product strategy, SaaS platforms, technical discovery",
     bio: "David shapes the company vision, product strategy, and client discovery process so every build starts with a clear commercial outcome.",
-    image: "/images/team/DavidMartin.png",
+    headline:
+      "Leading Slash Infotech with a product-first mindset and a clear vision for reliable digital delivery.",
+    location: "Glasgow, United Kingdom",
+    availability: "Executive discovery and strategic partnerships",
+    expertise: [
+      "Product strategy",
+      "SaaS planning",
+      "Technical discovery",
+      "Client advisory",
+    ],
+    responsibilities: [
+      "Defines company vision, service direction, and long-term client value.",
+      "Guides discovery sessions to connect business goals with practical technical plans.",
+      "Keeps leadership decisions focused on measurable outcomes and delivery clarity.",
+    ],
+    highlights: [
+      "Founder-led delivery standards",
+      "Commercial outcome mapping",
+      "Senior stakeholder alignment",
+    ],
+    stats: [
+      { label: "Primary focus", value: "Strategy" },
+      { label: "Delivery lens", value: "SaaS" },
+      { label: "Client mode", value: "Advisory" },
+    ],
+    completedProjects: [
+      {
+        client: "Indian Overseas Bank",
+        project: "Lead Bank of India - Annual Credit Plan",
+        category: "Banking",
+      },
+      {
+        client: "KS Readymades",
+        project: "ERP",
+        category: "Enterprise Software",
+      },
+      {
+        client: "JJ Scientific Solutions",
+        project: "Organization Management",
+        category: "Operations",
+      },
+      {
+        client: "Srii Neevi Hospital and Medicals",
+        project: "Hospital Management System",
+        category: "Healthcare",
+      },
+      {
+        client: "Government Arts and Science Colleges",
+        project: "Website Hosting",
+        category: "Hosting",
+      },
+      {
+        client: "Shuba Engineering College",
+        project: "Website Hosting",
+        category: "Hosting",
+      },
+      {
+        client: "Mahi Institute of Technology",
+        project: "Website Hosting",
+        category: "Hosting",
+      },
+      {
+        client: "Kings Catering Management Institute and others",
+        project: "Website Hosting",
+        category: "Hosting",
+      },
+      {
+        client: "General Stores",
+        project: "Mobile App Creation",
+        category: "Mobile App",
+      },
+      {
+        client: "Delight Computers",
+        project: "Workflow Automation",
+        category: "Automation",
+      },
+      {
+        client: "Union Bank of India - Pudukkottai",
+        project: "Automation of Backend Records",
+        category: "Banking Automation",
+      },
+      {
+        client: "H.H The Rajahs College",
+        project: "DFC Management System",
+        category: "Education",
+      },
+      {
+        client: "Career Brighten Computers",
+        project: "Institute Management System",
+        category: "Education",
+      },
+    ],    image: "/images/team/DavidMartin.png",
     accent: "from-[#2526A9] to-[#11155F]",
   },
   {
+    slug: "mr-kasthuri-raja",
     name: "Mr. Kasthuri Raja",
     role: "Director",
     email: "director@slashinfotech.co.uk",
     focus: "Interface systems, conversion journeys",
     bio: "Kasthuri guides client relationships, delivery coordination, and user-focused product decisions from concept to launch.",
+    headline:
+      "Connecting client goals, product decisions, and delivery coordination into one confident path.",
+    location: "United Kingdom and India delivery network",
+    availability: "Client relationships and delivery coordination",
+    expertise: [
+      "Client strategy",
+      "Delivery coordination",
+      "Conversion journeys",
+      "Interface systems",
+    ],
+    responsibilities: [
+      "Coordinates project priorities across design, engineering, and client stakeholders.",
+      "Shapes user journeys that support conversion, clarity, and long-term maintainability.",
+      "Maintains a practical rhythm from early planning through launch readiness.",
+    ],
+    highlights: [
+      "Client communication lead",
+      "Launch coordination",
+      "User journey alignment",
+    ],
+    stats: [
+      { label: "Primary focus", value: "Clients" },
+      { label: "Delivery lens", value: "UX" },
+      { label: "Client mode", value: "Coordination" },
+    ],
     image: "/images/team/Kasthuriraja.png",
     accent: "from-[#3228C8] to-[#17157A]",
   },
   {
+    slug: "mr-mathankumar",
     name: "Mr. Mathankumar",
     role: "Managing Director",
     email: "managingdirector@slashinfotech.co.uk",
     focus: "AI assistants, RAG workflows, intelligent operations",
     bio: "Mathankumar connects business operations with practical AI solutions, automation workflows, and scalable digital product planning.",
+    headline:
+      "Turning operational complexity into useful AI systems, automation flows, and scalable product plans.",
+    location: "India delivery leadership",
+    availability: "AI solution planning and operations transformation",
+    expertise: [
+      "AI assistants",
+      "RAG workflows",
+      "Automation planning",
+      "Operations design",
+    ],
+    responsibilities: [
+      "Maps operational workflows into AI-assisted systems that are useful and governable.",
+      "Plans automation opportunities with clear constraints, risks, and adoption goals.",
+      "Supports scalable product roadmaps across AI, data, and business operations.",
+    ],
+    highlights: [
+      "AI workflow planning",
+      "Operations intelligence",
+      "Automation strategy",
+    ],
+    stats: [
+      { label: "Primary focus", value: "AI" },
+      { label: "Delivery lens", value: "Ops" },
+      { label: "Client mode", value: "Planning" },
+    ],
     image: "/images/team/Mathankumar.png",
     accent: "from-[#2435C5] to-[#111B6B]",
   },
   {
+    slug: "mr-thirunavukarasan",
     name: "Mr. Thirunavukarasan",
     role: "Executive Director",
     email: "executivedirector@slashinfotech.co.uk",
     focus: "Full-stack systems, API design, delivery standards, UX research",
     bio: "Thirunavukarasan leads engineering delivery, full-stack architecture, and quality standards across web platforms, APIs, and internal systems.",
+    headline:
+      "Leading engineering execution across full-stack platforms, APIs, UX research, and delivery quality.",
+    location: "India engineering leadership",
+    availability: "Architecture reviews and delivery leadership",
+    expertise: [
+      "Full-stack architecture",
+      "API design",
+      "Quality standards",
+      "UX research",
+    ],
+    responsibilities: [
+      "Owns engineering delivery standards for web platforms, APIs, and internal systems.",
+      "Reviews architecture choices for performance, maintainability, and implementation speed.",
+      "Connects UX insight with technical execution so products stay clear and usable.",
+    ],
+    highlights: [
+      "Engineering delivery lead",
+      "Architecture reviews",
+      "Quality systems",
+    ],
+    stats: [
+      { label: "Primary focus", value: "Build" },
+      { label: "Delivery lens", value: "Systems" },
+      { label: "Client mode", value: "Execution" },
+    ],
     image: "/images/team/Thirunavukarasan.png",
     accent: "from-[#2D2BB8] to-[#10145E]",
   },
-  // {
-  //   name: "Oliver Reed",
-  //   role: "Cloud Architecture",
-  //   focus: "AWS, Azure, CI/CD, observability, cost control",
-  //   bio: "Oliver builds reliable cloud foundations with observability, automation, and cost control baked into the delivery model.",
-  //   image: "/images/team/team-a-4.png",
-  //   accent: "from-[#1E2A3A] to-[#1A56DB]",
-  // },
-  // {
-  //   name: "Sofia Patel",
-  //   role: "Security & GDPR",
-  //   focus: "Application security, GDPR readiness, cloud hardening",
-  //   bio: "Sofia helps product teams ship confidently with practical security reviews, privacy controls, and cloud hardening guidance.",
-  //   image: "/images/team/team-b-3.png",
-  //   accent: "from-[#111827] to-[#2526A9]",
-  // },
 ];
 
 export const teamPrinciples = [
@@ -347,3 +501,4 @@ export const teamPrinciples = [
     icon: Sparkles,
   },
 ];
+
